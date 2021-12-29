@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+/* icons */
 @import 'material-icons/iconfont/material-icons.css';
-
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap');
 body{
   background-color: #292929;
   margin: 0px;
