@@ -12,4 +12,10 @@ export class MoviesliderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sliderArray = [
+    {img: 'assets/img/drivep.jpg'},
+    {img: 'assets/img/leonp.jpg'},
+
+  ]
+
 }
