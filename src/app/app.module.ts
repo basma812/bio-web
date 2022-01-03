@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MoviesliderComponent } from './movieslider/movieslider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    MoviesliderComponent
   ],
   imports: [
     BrowserModule
