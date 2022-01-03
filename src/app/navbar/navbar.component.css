@@ -48,3 +48,8 @@ ul{
     color: white;
     margin-top: 10px;
 }
+.logo{
+    float: right;
+    height: 50px;
+    width: 50px;
+}
