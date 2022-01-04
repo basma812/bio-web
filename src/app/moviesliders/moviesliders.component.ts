@@ -20,7 +20,7 @@ export class MovieslidersComponent implements OnInit {
       pullDrag: false,
       dots: false,
       navSpeed: 700,
-      navText: ["<img src='assets/img/outline_arrow_back_ios_black_24dp.png'>","<img src='assets/img/outline_arrow_forward_ios_black_24dp.png'>"],
+      navText: ["<img class:'prev' src='assets/img/outline_arrow_back_ios_black_24dp.png'>","<img class:'next' src='assets/img/outline_arrow_forward_ios_black_24dp.png'>"],
       responsive: {
         0: {
           items: 1
