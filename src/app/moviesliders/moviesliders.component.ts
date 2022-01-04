@@ -15,12 +15,12 @@ export class MovieslidersComponent implements OnInit {
   
   customOptions: OwlOptions = {
       loop: true,
-      mouseDrag: false,
+      mouseDrag: true,
       touchDrag: false,
       pullDrag: false,
       dots: false,
       navSpeed: 700,
-      navText: ['', ''],
+      navText: ["<img src='assets/img/outline_arrow_back_ios_black_24dp.png'>","<img src='assets/img/outline_arrow_forward_ios_black_24dp.png'>"],
       responsive: {
         0: {
           items: 1
@@ -32,7 +32,7 @@ export class MovieslidersComponent implements OnInit {
           items: 3
         },
         940: {
-          items: 4
+          items: 6
         }
       },
       nav: true
