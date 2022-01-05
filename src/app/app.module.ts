@@ -5,12 +5,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
+import { MovieslidersComponent } from './moviesliders/moviesliders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    MovieslidersComponent
   ],
   imports: [
     BrowserModule,

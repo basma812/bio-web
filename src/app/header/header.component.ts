@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
+    
     responsive: {
       0: {
         items: 1
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    nav: false
   }
 
 
