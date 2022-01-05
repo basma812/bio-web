@@ -1,6 +1,5 @@
 body {
     margin: 60px;
-    background: #111;
   }
   
   .theatre {
@@ -13,6 +12,7 @@ body {
   
   .cinema-seats {
     display: flex;
+    color: purple;
   }
   
   .cinema-seats .seat {
