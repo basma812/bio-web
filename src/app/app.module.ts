@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieslidersComponent } from './moviesliders/moviesliders.component';
+import { DatePageComponent } from './date-page/date-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    MovieslidersComponent
+    MovieslidersComponent,
+    DatePageComponent
   ],
   imports: [
     BrowserModule,
