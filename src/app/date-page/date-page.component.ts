@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { movied } from './movied.model';
 
 
-
 @Component({
   selector: 'app-date-page',
   templateUrl: './date-page.component.html',
