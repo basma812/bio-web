@@ -1,5 +1,17 @@
-<div>
-   
+<div class="desc-comp">
+   <a *ngFor="let movied of description">
+    <div>
+       <div class="movie-poster-component">
+         <img class="movie-poster"[src]="movied.imagePath">
+       </div>
 
-   
+       <div class="desc">
+         <h4> {{movied.name}} </h4>
+         <p>{{movied.description}}</p>
+         <p>{{movied.genre}}</p>
+         <p>{{movied.productionDate}}</p>
+       </div>
+    </div>
+       
+   </a>
 </div>

@@ -1,8 +1,11 @@
 footer{
     text-align: center;
-    padding: 25px;
     background-color: #171717;
     color: white;
+    position:absolute;
+    bottom:0; 
+    width: 100%;
+    height:60px;
 
 }
 .space{
@@ -14,4 +17,7 @@ footer{
     width: 1600px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.github-icon{
+   padding-top: 15px;
 }
