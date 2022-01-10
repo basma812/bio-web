@@ -2,7 +2,7 @@
 .desc-comp{
  margin-right: auto;
  margin-left: auto;
- width: 900px;
+ width: 850px;
  padding: 110px;
 
 }
@@ -23,7 +23,7 @@
     width: 300px;
     
 }
-.movie-image{
+.movie-name{
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     font-weight: bold;
@@ -40,10 +40,11 @@
 .weekday-buttons{
     background-color: #333333; 
     color: whitesmoke;
-    padding: 13px 30px;
+    padding: 11px 28px;
     text-align: center;
     font-size: 12px;
     border: none;
+    font-family: 'Roboto', sans-serif;
 }
 .weekday-buttons:hover{
     background-color: #5F2383;

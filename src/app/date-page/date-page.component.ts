@@ -12,11 +12,20 @@ export class DatePageComponent implements OnInit {
 
   description: movied[] = [
     new movied(
-      'this a description test',
+      'Drive',
       'this is simply to see if it works',
       'assets/img/drivep.jpg',
       '2021-12-16',
-      'horror'
+      'horror',
+      1,
+    ),
+    new movied(
+      'pulp fiction',
+      'this is simply to see if it works',
+      'assets/img/pulp-fictionp.jpg',
+      '2021-12-16',
+      'horror',
+      2,
     ),
   ];
 

@@ -4,13 +4,14 @@ export class movied {
     public imagePath: string;
     public productionDate :  string;
     public genre: string; 
-
-constructor(name: string, desc: string, imagePath: string, productionDate: string, genre : string) {
+    public id: number;
+constructor(name: string, desc: string, imagePath: string, productionDate: string, genre : string, id : number,) {
     this.name = name;
     this.description = desc;
     this.imagePath = imagePath;
     this.productionDate = productionDate;
     this.genre = genre;
+    this.id = id;
 }
 
 }
