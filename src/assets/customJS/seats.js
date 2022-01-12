@@ -26,3 +26,4 @@ $(".cinema-seats .seat").on("click", function () {
   document.querySelector(".booked").innerHTML = bookedSeats + " Booked";
   document.querySelector(".seatsbooked").innerHTML = seatnametemp;
 });
+

@@ -1,4 +1,7 @@
+declare var seatnametemp: any;
 import { Component, OnInit } from '@angular/core';
+
+//import * as seatnametemp from 'seats.js';
 
 @Component({
   selector: 'app-seats',
