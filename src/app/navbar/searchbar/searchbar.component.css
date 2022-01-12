@@ -1,0 +1,23 @@
+.search{
+    float: right; 
+    padding-top: 15px;
+    padding-right: 5px;
+}
+.test{
+    font-family: 'Open Sans', sans-serif;
+}
+.sbutton{
+    background-color: transparent; 
+    border-color: transparent; 
+    cursor: default;
+    float: right;
+}
+.material-icons-outlined{
+    color: white;
+    margin-top: 10px;
+}
+.logo{
+    float: right;
+    height: 50px;
+    width: 50px;
+}
