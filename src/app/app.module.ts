@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { SeatsComponent } from './seats/seats.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SeatsComponent } from './seats/seats.component';
   ],
   imports: [
     BrowserModule,
-    CarouselModule
+    CarouselModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
