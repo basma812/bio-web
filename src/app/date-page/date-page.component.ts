@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { movied } from './movied.model';
 
 
@@ -29,7 +30,25 @@ export class DatePageComponent implements OnInit {
       'horror',
       
     ),
+    new movied(
+      3,
+      'Fight Club',
+      'this is simply to see if it works',
+      'assets/img/fightclubep.jpg',
+      '2021-12-16',
+      'horror',
+
+    ),
+    new movied(
+      4,
+      'Leon',
+      'this is simply to see if it works',
+      'assets/img/leonp.jpg"',
+      '2021-12-16',
+      'horror',
+    ),
   ];
 
   ngOnInit(): void {}
 }
+
