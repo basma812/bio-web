@@ -9,10 +9,10 @@ import { RouterModule } from '@angular/router';
 export class AppComponent {
   title = 'bio-web';
 
-  loadedFeature = 'date-page';
+ // loadedFeature = 'date-page';
 
-  onNavigate(feature: string){
-    this.loadedFeature = feature;
-  }
+  //onNavigate(feature: string){
+   // this.loadedFeature = feature;
+  //}
 }
 
