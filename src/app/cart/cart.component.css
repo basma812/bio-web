@@ -147,4 +147,13 @@
     background: #8A2BE2;
     padding:0.5rem;
     padding-right: 2.5rem;
-  }  
+  }
+  
+  .sub-btn{
+    color: #8A2BE2;
+    text-decoration: none;
+  }
+  .sub-btn:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+  }

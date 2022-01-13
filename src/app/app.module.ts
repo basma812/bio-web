@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -16,12 +17,14 @@ import { CartComponent } from './cart/cart.component';
     NavbarComponent,
     HeaderComponent,
     SeatsComponent,
-    CartComponent
+    CartComponent,
+    
   ],
   imports: [
     BrowserModule,
     CarouselModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
