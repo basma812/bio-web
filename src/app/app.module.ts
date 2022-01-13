@@ -8,13 +8,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { SeatsComponent } from './seats/seats.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    SeatsComponent
+    SeatsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
