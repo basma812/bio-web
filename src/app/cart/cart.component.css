@@ -151,9 +151,10 @@
   
   .sub-btn{
     color: #8A2BE2;
-    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(238, 237, 237);
   }
   .sub-btn:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(46, 110, 105);
     transition: 0.5s;
   }

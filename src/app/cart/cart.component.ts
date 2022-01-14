@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators} from '@angular/forms';
+import { SeatsComponent } from '../seats/seats.component';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-
+  SeatsComponent!: string;
   constructor() { }
 
   ngOnInit(): void {
@@ -22,4 +24,6 @@ export class CartComponent implements OnInit {
   get name(){return this.shippingForm.get('name')}
   get email(){return this.shippingForm.get('email')}
   get phoneNumber(){return this.shippingForm.get('phoneNumber')}
+
+
 }
