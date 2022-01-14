@@ -50,5 +50,12 @@ export class DatePageComponent implements OnInit {
   ];
 
   ngOnInit(): void {}
+
+  selectedMovie?: movied;
+
+  onSelect(M: movied): void{
+    this.selectedMovie = M;
+  }
 }
+
 
