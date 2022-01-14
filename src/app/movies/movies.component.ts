@@ -9,9 +9,7 @@ import { DatePageComponent } from '../date-page/date-page.component';
 })
 export class MoviesComponent implements OnInit {
 
-  export interface movied{
-
-  }
+  
 
   constructor() { }
 
