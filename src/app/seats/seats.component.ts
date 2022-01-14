@@ -21,7 +21,6 @@ export class SeatsComponent implements OnInit {
       $(this).toggleClass("active");
       let active = $(".seat.active");
       active.each(function () {
-        let seatsPerRow = $(this).parent().find(".seat").length;
         if (!$(this).closest(".cinema-seats").hasClass("right")) {
           let prevRows =
             $(this).parent(".cinema-row").prevAll(".cinema-row").length - 1;
@@ -30,7 +29,6 @@ export class SeatsComponent implements OnInit {
             ($(this).index() + 9).toString(36).toUpperCase() +
             " ";
         } else {
-          let leftSeats = $(".left").find(".seat").length;
           let prevRows = $(this).parent(".cinema-row").prevAll(".cinema-row")
             .length;
           seatnametemp +=
@@ -39,10 +37,6 @@ export class SeatsComponent implements OnInit {
             " ";
         }
       });
-      
-      
     });
-  }
-
-  
+  } 
 }
