@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output} from '@angular/core';
+
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,7 +8,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./moviesliders.component.css']
 })
 export class MovieslidersComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
