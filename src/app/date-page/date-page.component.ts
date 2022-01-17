@@ -14,9 +14,9 @@ import {MovieService} from '../movie.service';
 })
 export class DatePageComponent implements OnInit {
 
- constructor() { }
+  @Input() mov?: movied;
 
- @Input() M?: movied;
+ constructor() { }
 
   ngOnInit(): void {}
 
