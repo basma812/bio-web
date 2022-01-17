@@ -1,6 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { movied } from '../date-page/movied.model';
-import { DatePageComponent } from '../date-page/date-page.component';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { movied } from '../movied.model';
+import {moviesdesc} from '../mock-movied'
 
 @Component({
   selector: 'app-movies',
@@ -9,7 +9,12 @@ import { DatePageComponent } from '../date-page/date-page.component';
 })
 export class MoviesComponent implements OnInit {
 
-  
+  @Input() M?: movied;
+
+ // getMovies(): void {
+   // this.movieService.getMovies()
+    //.subscribe(Movies => this.movies = movies.slice(1,5)):
+  //}
 
   constructor() { }
 

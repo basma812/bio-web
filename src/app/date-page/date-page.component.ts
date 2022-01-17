@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { movied } from '../movied.model';
+import {moviesdesc} from '../mock-movied';
+import {MovieService} from '../movie.service';
 
-import { movied } from './movied.model';
+
 
 
 @Component({
@@ -9,45 +12,10 @@ import { movied } from './movied.model';
   styleUrls: ['./date-page.component.css'],
 })
 export class DatePageComponent implements OnInit {
-  constructor() {}
 
-  description: movied[] = [
-    new movied(
-      1,
-      'Drive',
-      'this is simply to see if it works',
-      'assets/img/drivep.jpg',
-      '2021-12-16',
-      'horror',
-      
-    ),
-    new movied(
-      2,
-      'pulp fiction',
-      'this is simply to see if it works',
-      'assets/img/pulp-fictionp.jpg',
-      '2021-12-16',
-      'horror',
-      
-    ),
-    new movied(
-      3,
-      'Fight Club',
-      'this is simply to see if it works',
-      'assets/img/fightclubep.jpg',
-      '2021-12-16',
-      'horror',
+ constructor() { }
 
-    ),
-    new movied(
-      4,
-      'Leon',
-      'this is simply to see if it works',
-      'assets/img/leonp.jpg"',
-      '2021-12-16',
-      'horror',
-    ),
-  ];
+  M = moviesdesc;
 
   ngOnInit(): void {}
 
@@ -56,6 +24,7 @@ export class DatePageComponent implements OnInit {
   onSelect(M: movied): void{
     this.selectedMovie = M;
   }
+  
 }
 
 
