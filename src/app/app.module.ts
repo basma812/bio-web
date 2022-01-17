@@ -11,6 +11,7 @@ import { SeatsComponent } from './seats/seats.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './cart/cart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +25,10 @@ import { CartComponent } from './cart/cart.component';
     BrowserModule,
     CarouselModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
