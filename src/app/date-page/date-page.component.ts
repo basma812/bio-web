@@ -6,6 +6,7 @@ import {MovieService} from '../movie.service';
 
 
 
+
 @Component({
   selector: 'app-date-page',
   templateUrl: './date-page.component.html',
@@ -15,15 +16,12 @@ export class DatePageComponent implements OnInit {
 
  constructor() { }
 
-  M = moviesdesc;
+ @Input() M?: movied;
 
   ngOnInit(): void {}
 
-  selectedMovie?: movied;
-
-  onSelect(M: movied): void{
-    this.selectedMovie = M;
-  }
+  
+  
   
 }
 

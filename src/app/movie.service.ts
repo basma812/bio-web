@@ -10,10 +10,10 @@ export class MovieService {
 
   constructor() { }
 
- // getMovies(): Observable<movied[]> {
-     //const movies = of(MOVIES);
-    // return movies;
-  //}
+ getMovies(): movied[] {
+     
+     return  moviesdesc;
+  }
 }
 
 
