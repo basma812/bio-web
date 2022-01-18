@@ -1,29 +1,15 @@
-<div class="navbar">
- <ul>
-     <li>
-        <span class="material-icons-outlined">
-            local_activity
-        </span>
-     </li>
-     <li><a routerLink="">Home</a></li>
-     <li><a>Tickets</a></li>
-     <li><a routerLink="cart">cart</a></li>
-     
-     <button class="sbutton" type="submit">
-        <i>
-           <span class="material-icons-outlined">
-               search
-           </span>
-       </i>
-   </button>   
-     <form class="search">
-         <input type="text" 
-         placeholder="Search..."
-         name="search">
-     </form>
-     
- </ul>
-</div>
-<div class="test">
-    <h1></h1>
-</div>
+<div class="topnav">
+    <a class="active" routerLink=""><span class="material-icons-outlined">
+        local_activity
+    </span></a>
+    <a routerLink="">Home</a>
+    <a routerLink="">Tickets</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><span class="material-icons-outlined">
+            search
+            </span></button>
+      </form>
+    </div>
+  </div>
