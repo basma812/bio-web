@@ -8,9 +8,6 @@ body {
     color: white;
 
 }
-.material-icons-outlined button:hover {
-    color: #5F2383;
-}
 
 .topnav {
   overflow: hidden;
@@ -30,6 +27,8 @@ body {
 .topnav a:hover {
   background-color: #5F2383;
   color: whitesmoke;
+  height: 57px;
+  top: -4px;
 }
 
 .topnav a.active {
@@ -60,5 +59,7 @@ body {
 }
 
 .topnav .search-container button:hover {
-  background: #5F2383;
+   background-color: #171717;
+   height: 47px;
+   
 }
