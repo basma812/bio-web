@@ -10,14 +10,23 @@ import { MovieService } from '../movie.service';
 })
 export class MoviesComponent implements OnInit {
 
-  M = moviesdesc;
+  M: movied[] = [];
 
-  ngOnInit(): void {}
+  constructor(private movieService: MovieService) {
 
-  selectedMovie?: movied;
-
-  onSelect(M: movied): void{
-    this.selectedMovie = M;
   }
+
+  ngOnInit(): void {
+    this.getMovies();
+  }
+
+  getMovies(){
+    this.movieService.getMovies()
+     .subscribe(M => this.M = M);
+  }
+
+ 
+
+ 
   
 }

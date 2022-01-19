@@ -1,10 +1,9 @@
 <h2>movies</h2> 
 <ul class="movies">
-  <li *ngFor="let mov of M" 
-  [class.selected]="mov === selectedMovie" 
-  (click)="onSelect(mov)">
+  <li *ngFor="let mov of M">
+    <a>
       <span>{{mov.id}}</span> {{mov.name}}
+    </a>
   </li>
 </ul>
 
-<app-date-page [mov]="selectedMovie">  </app-date-page>

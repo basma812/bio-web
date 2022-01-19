@@ -3,7 +3,8 @@ import { movied } from '../movied.model';
 import {moviesdesc} from '../mock-movied';
 import {MovieService} from '../movie.service';
 
-
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 
 
@@ -14,11 +15,19 @@ import {MovieService} from '../movie.service';
 })
 export class DatePageComponent implements OnInit {
 
-  @Input() mov?: movied;
+  mov: movied | undefined;
 
- constructor() { }
+ constructor(private route: ActivatedRoute, private movieService: MovieService, private location: Location) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getMovie();
+  }
+
+  getMovie(): void{
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.movieService.getMovie(id)
+    .subscribe(movied => this.mov = movied );
+  }
 
   
   
