@@ -1,39 +1,31 @@
-<div class="desc-comp">
-   <a *ngFor="let mov of M" [class.selected]="mov === selectedMovie" (click)="onSelect(mov)">
-      <div *ngIf="selectedMovie">
-       <span>{{mov.id}}</span>
-        <div class="movie-poster-component">
-          <img class="movie-poster"[src]="mov.imagePath">
+<div class="movie-container" *ngIf="mov">
+
+  <div class="boxinabox">
+    
+      <img class="movie-poster" [src]="mov.imagePath">
+    <div class="text">
+      <h2 class="movie-name">{{ mov.name | uppercase}}</h2>
+      <p class="desc">{{ mov.description }}</p>
+      <p class="pgtext">{{mov.genre}}</p>
+      <p class="pgtext">{{mov.productionDate}}</p>
+
+      <div>
+        <div>
+          <button  class="weekday-buttons" role="button">Monday</button>
+          <button class="weekday-buttons" role="button">Tuesday</button>
+          <button class="weekday-buttons" role="button">Wednesday</button>
+        </div> 
+        <div>
+          <button class="weekday-buttons" role="button">Thursday</button>
+          <button class="weekday-buttons" role="button">Friday</button>
+          <button class="weekday-buttons" role="button">Saturday</button>
+          <button class="weekday-buttons" role="button">Sunday</button>
         </div>
+    </div>
 
-       <div class="desc" >
-          <h1 class="movie-name"> {{selectedMovie.name | uppercase}} </h1>
-          <div><span>id: </span>{{selectedMovie.id}}</div>
-          <p class="movie-desc">{{selectedMovie.description}}</p>
-          <p class="movie-desc-text">{{selectedMovie.genre}}</p>
-          <p class="movie-desc-text">{{selectedMovie.productionDate}}</p>
-          <!--p>{{selectedMovie.id}}</p-->
+    </div>  
 
-          <input id="mov-name" [ngModel = "selectedMovie.name"] >
+  </div>
 
-          <app-movies [M]="selectedMovie"></app-movies>
-
-          <div>
-              <div>
-                <button href="#" class="weekday-buttons" role="button">Monday</button>
-                <button class="weekday-buttons" role="button">Tuesday</button>
-                <button class="weekday-buttons" role="button">Wednesday</button>
-              </div> 
-              <div>
-                <button class="weekday-buttons" role="button">Thursday</button>
-                <button class="weekday-buttons" role="button">Friday</button>
-                <button class="weekday-buttons" role="button">Saturday</button>
-                <button class="weekday-buttons" role="button">Sunday</button>
-              </div>
-          </div>
-       </div>
-    </div>   
-   </a>
-      
 </div>
 

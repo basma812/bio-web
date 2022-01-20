@@ -1,15 +1,11 @@
-<div class="movies-box"  >
-    <a routerLink="seats" href="#" >
-        <img class="poster" src="assets/img/drivep.jpg">
+
+<h2>movies</h2> 
+<ul class="movies">
+  <li *ngFor="let mov of M">
+    <a>
+      <span>{{mov.id}}</span> {{mov.name}}
     </a>
-    <a routerLink="date-page" href="#">
-        <img class="poster" src="assets/img/pulp-fictionp.jpg">
-    </a>
-    <a routerLink="date-page" href="#">
-        <img class="poster" src="assets/img/fightclubep.jpg">
-    </a>
-    <a routerLink="date-page" href="#">
-        <img class="poster" src="assets/img/leonp.jpg">
-    </a>
-    
-</div>
+  </li>
+</ul>
+
+

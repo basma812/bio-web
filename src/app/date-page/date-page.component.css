@@ -4,39 +4,34 @@
  margin-left: auto;
  width: 850px;
  padding: 110px;
-
 }
 
 .desc{
-    float: right;
-   padding: 40px;
-   margin-top: -58px;
-      
-}
-.movie-poster-component{
-    float: left;
-    padding-right: 10px;
-   
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke; 
 }
 .movie-poster{
-    height: 500px;
-    width: 300px;
+    height: 700px;
+    width: 500px;
+    float: left;
     
 }
 .movie-name{
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     font-weight: bold;
+    font-size: 40px;
 }
 .movie-desc{
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
     font-size: 20px;
 }
-.movie-desc-text{
+.pgtext{
     font-family: 'Open Sans', sans-serif;
-    color: whitesmoke; 
+    color: whitesmoke;
 }
+
 .weekday-buttons{
     background-color: #333333; 
     color: whitesmoke;
@@ -48,4 +43,24 @@
 }
 .weekday-buttons:hover{
     background-color: #5F2383;
+}
+.movie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 1800px;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text{
+    float:right;
+    padding: 30px;
+}
+.desc{
+    width: 1000px;
+    font-size: 25px;
 }

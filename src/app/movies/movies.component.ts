@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { movied } from '../movied.model';
 import {moviesdesc} from '../mock-movied'
+import { MovieService } from '../movie.service';
 
 @Component({
   selector: 'app-movies',
@@ -8,17 +9,31 @@ import {moviesdesc} from '../mock-movied'
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
+  selectedMovie?: movied;
 
-  @Input() M?: movied;
+  M: movied[] = [];
 
- // getMovies(): void {
-   // this.movieService.getMovies()
-    //.subscribe(Movies => this.movies = movies.slice(1,5)):
-  //}
+  constructor(private movieService: MovieService) {
 
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
+  ngOnInit(): void {
+    this.getMovies();
+  }
+
+  getMovies(){
+    this.movieService.getMovies()
+     .subscribe(M => this.M = M);
+  }
+
+  onSelect(M: movied): void{
+    this.selectedMovie = M;
+  }
+  
+  
+
+ 
+
+ 
+  
 }
