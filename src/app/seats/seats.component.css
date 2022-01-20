@@ -224,20 +224,20 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 500px;
+  padding-top: 400px;
 }
-.btn-kassa{
-  background-color: #333333; 
-  color: whitesmoke;
-  padding: 11px 28px;
-  text-align: center;
-  font-size: 14px;
-  border: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  border: #171717;
-  border-style: solid;
+.btnc{
+    background-color: #333333; 
+    color: whitesmoke;
+    padding: 11px 28px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: #171717;
+    border-style: solid;
 }
-.btn-kassa:hover{
+.btnc:hover{
   background-color: #5F2383;
 }
