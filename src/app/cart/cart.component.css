@@ -158,3 +158,22 @@
     color: rgb(46, 110, 105);
     transition: 0.5s;
   }
+  .btnp{
+    background-color: #333333; 
+    color: whitesmoke;
+    padding: 11px 28px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: #171717;
+    border-style: solid;
+  }
+  .btnp:hover{
+    background-color: #5F2383;
+  }
+  .s{
+    height: 10px;
+    border-width: 0,5px;
+  }
