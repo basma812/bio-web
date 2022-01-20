@@ -218,3 +218,10 @@ html {
   font-family: "Montserrat";
   scroll-behavior: smooth;
 }
+a{
+position:relative;
+left:20%;
+right:20%;
+bottom:70%;
+top:60%;
+}

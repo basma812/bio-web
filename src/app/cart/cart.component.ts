@@ -10,11 +10,12 @@ export class CartComponent implements OnInit {
   SeatsComponent!: string;
 
   bookingForm!: FormGroup;
- 
+  
 
 
   ngOnInit(): void {
-  
+    
+ //this.purchesalert();
   }
 
   shippingForm = new FormGroup({
@@ -29,5 +30,7 @@ export class CartComponent implements OnInit {
   get email(){return this.shippingForm.get('email')}
   get phoneNumber(){return this.shippingForm.get('phoneNumber')}
 
-
+//purchesalert():void{
+ // alert("Thank you for purchasing");
+//}
 }
