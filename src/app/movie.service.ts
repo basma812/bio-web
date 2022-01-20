@@ -23,7 +23,7 @@ export class MovieService {
     this.messageService.add('MovieService: fetch movie id=${id}')
     return of (movied);
   }
-  
+ 
 }
 
 

@@ -16,11 +16,13 @@ import { Location } from '@angular/common';
 export class DatePageComponent implements OnInit {
 
   mov: movied | undefined;
+ 
 
  constructor(private route: ActivatedRoute, private movieService: MovieService, private location: Location) { }
 
   ngOnInit(): void {
     this.getMovie();
+   
   }
 
   getMovie(): void{
@@ -28,6 +30,7 @@ export class DatePageComponent implements OnInit {
     this.movieService.getMovie(id)
     .subscribe(movied => this.mov = movied );
   }
+  
 
   
   

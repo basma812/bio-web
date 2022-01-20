@@ -9,6 +9,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
+  selectedMovie?: movied;
 
   M: movied[] = [];
 
@@ -24,6 +25,12 @@ export class MoviesComponent implements OnInit {
     this.movieService.getMovies()
      .subscribe(M => this.M = M);
   }
+
+  onSelect(M: movied): void{
+    this.selectedMovie = M;
+  }
+  
+  
 
  
 

@@ -8,6 +8,7 @@ import { movied } from '../movied.model';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  selectedMovie?: movied;
 
   M: movied[] = [];
 
@@ -21,5 +22,10 @@ export class DashboardComponent implements OnInit {
     this.movieService.getMovies()
     .subscribe(M => this.M = M.slice(0,5))
   }
+
+  onSelect(M: movied): void{
+    this.selectedMovie = M;
+  }
+  
 
 }
