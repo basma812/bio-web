@@ -37,9 +37,13 @@
     color: whitesmoke;
     padding: 11px 28px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     border: none;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: #171717;
+    border-style: solid;
+    
 }
 .weekday-buttons:hover{
     background-color: #5F2383;
