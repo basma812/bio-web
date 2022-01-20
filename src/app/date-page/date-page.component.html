@@ -1,8 +1,9 @@
 <div class="movie-container" *ngIf="mov">
 
   <div class="boxinabox">
-    
-      <img class="movie-poster" [src]="mov.imagePath">
+       
+         <img class="movie-poster" [src]="mov.imagePath">
+       
     <div class="text">
       <h2 class="movie-name">{{ mov.name | uppercase}}</h2>
       <p class="desc">{{ mov.description }}</p>
@@ -11,15 +12,15 @@
 
       <div>
         <div>
-          <button  class="weekday-buttons" role="button">Monday</button>
-          <button class="weekday-buttons" role="button">Tuesday</button>
-          <button class="weekday-buttons" role="button">Wednesday</button>
+          <button  routerLink="/seats" class="weekday-buttons" role="button">Monday</button>
+          <button   routerLink="/seats" class="weekday-buttons" role="button">Tuesday</button>
+          <button  routerLink="/seats" class="weekday-buttons" role="button">Wednesday</button>
         </div> 
         <div>
-          <button class="weekday-buttons" role="button">Thursday</button>
-          <button class="weekday-buttons" role="button">Friday</button>
-          <button class="weekday-buttons" role="button">Saturday</button>
-          <button class="weekday-buttons" role="button">Sunday</button>
+          <button  routerLink="/seats" class="weekday-buttons" role="button">Thursday</button>
+          <button  routerLink="/seats" class="weekday-buttons" role="button">Friday</button>
+          <button   routerLink="/seats" class="weekday-buttons" role="button">Saturday</button>
+          <button  routerLink="/seats" class="weekday-buttons" role="button">Sunday</button>
         </div>
     </div>
 
