@@ -25,15 +25,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-
     SeatsComponent,
     CartComponent,
-    
-
     MovieslidersComponent,
     DatePageComponent,
     MoviesComponent,
-    datepage,
     HomeComponent,
     MessagesComponent,
     DashboardComponent
