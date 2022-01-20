@@ -16,6 +16,8 @@ import { DatePageComponent } from './date-page/date-page.component';
 import { MoviesComponent } from './movies/movies.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -31,7 +33,10 @@ import { AppRoutingModule } from './app-routing.module';
     MovieslidersComponent,
     DatePageComponent,
     MoviesComponent,
-    HomeComponent
+    datepage,
+    HomeComponent,
+    MessagesComponent,
+    DashboardComponent
 
   ],
   imports: [
