@@ -1,0 +1,45 @@
+
+    <main>
+        <section class="onecolumn">
+        
+        <h3><a href="">Shopping Cart</a> &#x276F; Your Order &#x276F;</h3>
+        <!-- CODE TO PLACE -->
+        
+        <h2>ORDER CHECKOUT</h2>
+         <h4>Your shipping information</h4>
+
+            <form [formGroup]="shippingForm">
+              <div class="form-group">
+                <table id="checkoutSummary">
+                  <tbody>
+                <tr><th>Order Number</th><td># 01</td></tr>
+                <tr><th><label>Client Name:</label></th><td><input type="name" class="form-control" formControlName="name" placeholder="Enter Name"></td></tr>
+                <tr><th><label>Email:</label></th><td><input type="email" class="form-control" formControlName="email" placeholder="Enter Email"></td></tr>
+                <tr><th><label>Phone Number:</label></th><td><input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter Phone Number"></td></tr>
+              </tbody>
+            </table>
+              </div>
+          </form>         
+          <h4>Items Ordered</h4>        
+          <table id="checkoutItems">
+            <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            </tr>            
+            <tr><td><h3>Seat</h3></td>
+              <td>1</td>
+              <td>135 kr</td></tr>            
+            <tr id="finalSum"><td colspan="2" style="border:0; text-align:right;">SubTotal</td>
+              <td>135 kr</td></tr>            
+                <tr><td colspan="2" style="border:0; text-align:right;">Shipping</td>
+              <td>0 kr</td></tr>
+                    <tr><td colspan="2" style="border:0; text-align:right;">Moms</td>
+              <td>5 kr</td></tr>           
+             <tr><td colspan="2" style="border:0; text-align:right;">Total</td>
+              <td style="background: #eee;">140 kr</td></tr>
+          </table>
+          
+        </section>
+
+          <button class="button" type="submit">Purchase</button>
