@@ -1,10 +1,6 @@
 import * as $ from 'jquery';
 import { Component, OnInit } from '@angular/core';
 
-
-
-//import * as seatnametemp from 'seats.js';
-
 @Component({
   selector: 'app-seats',
   templateUrl: './seats.component.html',
